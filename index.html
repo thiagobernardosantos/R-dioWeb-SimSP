@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RádioWeb SimSP | Ouça ao vivo</title>
+<meta name="description" content="Ouça a RádioWeb SimSP ao vivo, no celular ou no computador. Simples assim.">
+<meta name="theme-color" content="#052859">
+<meta property="og:title" content="RádioWeb SimSP | Ouça ao vivo">
+<meta property="og:description" content="Aperte o play e ouça a RádioWeb SimSP ao vivo.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">RádioWeb <span>SimSP</span></a>
+    <nav aria-label="Principal"><a href="sobre.html">Sobre</a><a href="apresentador.html">Apresentador</a><a href="programacao.html">Programação</a><a href="onde-ouvir.html">Onde ouvir</a><a href="anuncie.html">Anuncie</a></nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <h1>Aperte o play e ouça ao vivo.</h1>
+    <p class="lead">A RádioWeb SimSP toca no seu celular ou no computador, sem baixar nada. Simples assim.</p>
+
+    <div class="tuner" id="tuner">
+      <div class="dial" aria-hidden="true"><div class="needle"></div></div>
+      <div class="controls">
+        <button id="play" type="button" aria-label="Ouvir ao vivo">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+          <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4.5v16H6zM13.5 4H18v16h-4.5z"/></svg>
+        </button>
+        <div class="status" aria-live="polite">
+          <strong id="st-title">Toque para ouvir</strong>
+          <small id="st-sub">RádioWeb SimSP, ao vivo</small>
+        </div>
+        <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <label class="vol">Volume
+          <input id="vol" type="range" min="0" max="1" step="0.05" value="0.8">
+        </label>
+      </div>
+      <audio id="audio" preload="none"></audio>
+    </div>
+  </div>
+</div>
+
+<section id="sobre" class="sobre">
+  <div class="wrap">
+    <h2>Uma rádio feita para você ouvir onde estiver.</h2>
+    <!-- TROCAR: texto provisório, substituir pelo texto final da rádio -->
+    <p>A RádioWeb SimSP é uma rádio online com música, programas e recados dos ouvintes. Você sintoniza pelo site, pelo aplicativo ou pelo celular, a qualquer hora do dia.</p>
+    <p>Também dá para pedir sua música e mandar um alô para quem você quiser.</p>
+    <p><a class="btn" href="sobre.html">Conheça a rádio</a></p>
+  </div>
+</section>
+
+<section id="apresentador">
+  <div class="wrap host">
+    <img src="img/marcio.jpg" alt="Márcio Pedraza Aguilera, apresentador da RádioWeb SimSP" width="280" height="280">
+    <div>
+      <h2>Márcio Pedraza Aguilera</h2>
+      <!-- TROCAR: mini bio provisória -->
+      <p>Apresentador da RádioWeb SimSP. Acompanhe a grade de programação para saber quando ele está no ar.</p>
+      <p><a class="btn" href="programacao.html" style="margin-top:.5rem">Ver programação</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="ouvir">
+  <div class="wrap">
+    <h2>Escolha como ouvir.</h2>
+    <div class="ways">
+      <a href="https://play.google.com/store/apps/details?id=br.com.radiosapp6.radiowebsimsp" target="_blank" rel="noopener">
+        <strong>Aplicativo no Google Play</strong><span>Leve a rádio no bolso.</span>
+      </a>
+      <a href="https://radiowebsimsp.com.br/pedido">
+        <strong>Peça sua música</strong><span>Escolha o que quer ouvir.</span>
+      </a>
+      <a href="https://radiowebsimsp.com.br/recados">
+        <strong>Deixe um recado</strong><span>Mande um alô para o programa.</span>
+      </a>
+      <a href="https://radiowebsimsp.com.br/">
+        <strong>Site completo da rádio</strong><span>Vídeos, álbuns, chat e mais.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="anuncie">
+  <div class="wrap">
+    <div class="ad">
+      <h2>Quer anunciar na rádio?</h2>
+      <p>Coloque sua empresa na frente de quem ouve a RádioWeb SimSP. Chame no WhatsApp e receba as opções.</p>
+      <a class="btn" href="https://api.whatsapp.com/send?phone=5511952687907&text=Ol%C3%A1!%20Quero%20anunciar%20na%20R%C3%A1dioWeb%20SimSP." target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 RádioWeb SimSP. Todos os direitos reservados.</span>
+    <nav aria-label="Redes sociais">
+      <a href="https://www.instagram.com/simplifica_sp" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://youtube.com/@simplificaspconsultoria" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://api.whatsapp.com/send?phone=5511952687907" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/player.js" defer></script>
+</body>
+</html>
